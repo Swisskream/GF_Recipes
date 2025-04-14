@@ -1,21 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="homepage.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gluten-Free Recipes</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff8f0;
+            color: #333;
+            }
+            header {
+            background: #ffb347;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            }
+            .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            }
+            .recipe {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background-color: #fff;
+            cursor: pointer;
+            transition: transform 0.2s;
+            }
+            .recipe:hover {
+            transform: scale(1.02);
+            }
+            .details {
+            display: none;
+            margin-top: 0.5rem;
+            }
+        </style>
     </head>
     <body>
-        <h1 class="title">Welcome to Gluten Free Recipes!</h1>
-        <p>Here you can find a variety of gluten-free recipes to suit your dietary needs.</p>
-        <h2>Featured Recipes</h2>
-        <ul>
-            <li><a href="recipe1.html">Gluten-Free Pancakes</a></li>
-            <li><a href="recipe2.html">Quinoa Salad</a></li>
-            <li><a href="recipe3.html">Chocolate Chip Cookies</a></li>
-            <li><a href="recipe4.html">Zucchini Noodles</a></li>
-        </ul>
-        <h2>Breakfast</h2>
-        <h2>Lunck</h2>
-        <h2>Dinner</h2>
-        <h2>Snacks</h2>
+        <header>
+            <h1>Gluten-Free Recipes</h1>
+            <p>Delicious and healthy meals without the gluten!</p>
+        </header>
+        <div class="container">
+            <div class="recipe" onclick="toggleDetails(this)">
+            <h2>Quinoa Salad</h2>
+            <div class="details">
+                <p><strong>Ingredients:</strong> Quinoa, cucumber, cherry tomatoes, lemon juice, olive oil</p>
+                <p><strong>Instructions:</strong> Cook quinoa, chop veggies, mix all together and serve chilled.</p>
+            </div>
+            </div>
+
+            <div class="recipe" onclick="toggleDetails(this)">
+            <h2>Chickpea Pancakes</h2>
+            <div class="details">
+                <p><strong>Ingredients:</strong> Chickpea flour, water, salt, veggies</p>
+                <p><strong>Instructions:</strong> Mix ingredients, pour onto pan, cook both sides until golden.</p>
+            </div>
+            </div>
+
+            <div class="recipe" onclick="toggleDetails(this)">
+            <h2>Stuffed Bell Peppers</h2>
+            <div class="details">
+                <p><strong>Ingredients:</strong> Bell peppers, rice, ground turkey, spices</p>
+                <p><strong>Instructions:</strong> Cook filling, stuff peppers, bake at 375°F for 30 mins.</p>
+            </div>
+            </div>
+        </div>
+
+        <script>
+            function toggleDetails(element) {
+            const details = element.querySelector(".details");
+            const allDetails = document.querySelectorAll(".details");
+            allDetails.forEach(d => {
+                if (d !== details) d.style.display = "none";
+            });
+            details.style.display = details.style.display === "block" ? "none" : "block";
+            }
+        </script>
     </body>
 </html>
