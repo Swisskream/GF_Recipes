@@ -12,30 +12,42 @@
             <p>Delicious and healthy meals without the gluten!</p>
         </header>
         <div class="container">
-            <div class="recipe" onclick="toggleDetails(this)">
-            <h2>Quinoa Salad</h2>
-            <div class="details">
-                <p><strong>Ingredients:</strong> Quinoa, cucumber, cherry tomatoes, lemon juice, olive oil</p>
-                <p><strong>Instructions:</strong> Cook quinoa, chop veggies, mix all together and serve chilled.</p>
-            </div>
-            </div>
-
-            <div class="recipe" onclick="toggleDetails(this)">
-            <h2>Chickpea Pancakes</h2>
-            <div class="details">
-                <p><strong>Ingredients:</strong> Chickpea flour, water, salt, veggies</p>
-                <p><strong>Instructions:</strong> Mix ingredients, pour onto pan, cook both sides until golden.</p>
-            </div>
+            <div class="breakfast">
+                <div class="recipe" onclick="toggleDetails(this)">
+                <h2>Chickpea Pancakes</h2>
+                <div class="details">
+                    <p><strong>Ingredients:</strong> Chickpea flour, water, salt, veggies</p>
+                    <p><strong>Instructions:</strong> Mix ingredients, pour onto pan, cook both sides until golden.</p>
+                </div>
+                </div>
             </div>
 
-            <div class="recipe" onclick="toggleDetails(this)">
-            <h2>Stuffed Bell Peppers</h2>
-            <div class="details">
-                <p><strong>Ingredients:</strong> Bell peppers, rice, ground turkey, spices</p>
-                <p><strong>Instructions:</strong> Cook filling, stuff peppers, bake at 375°F for 30 mins.</p>
+            <div class="dinner">
+                <div class="recipe" onclick="toggleDetails(this)">
+                <h2>Quinoa Salad</h2>
+                <div class="details">
+                    <p><strong>Ingredients:</strong> Quinoa, cucumber, cherry tomatoes, lemon juice, olive oil</p>
+                    <p><strong>Instructions:</strong> Cook quinoa, chop veggies, mix all together and serve chilled.</p>
+                </div>
+                </div>
             </div>
+
+            <div class="snack">
+                <div class="recipe" onclick="toggleDetails(this)">
+                <h2>Almond Butter Energy Balls</h2>
+                <div class="details">
+                    <p><strong>Ingredients:</strong> Almond butter, oats, honey, chocolate chips</p>
+                    <p><strong>Instructions:</strong> Mix ingredients, roll into balls, refrigerate for 30 mins.</p>
+                </div>
+                </div>
+                <div class="recipe" onclick="toggleDetails(this)">
+                <h2>Stuffed Bell Peppers</h2>
+                <div class="details">
+                    <p><strong>Ingredients:</strong> Bell peppers, rice, ground turkey, spices</p>
+                    <p><strong>Instructions:</strong> Cook filling, stuff peppers, bake at 375°F for 30 mins.</p>
+                </div>
+                </div>
             </div>
-        </div>
 
         <script>
             function toggleDetails(element) {
