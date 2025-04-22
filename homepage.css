@@ -1,20 +1,21 @@
 .title {
-    color: #4b2c92;
-}
-
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background: #fff8f0;
-color: #333;
+    color: #0b3351;
 }
 header {
-background: #ffb347;
+background: #add10d;
 color: white;
 padding: 1rem;
 text-align: center;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fbfff0;
+    color: #333;
+}
+
 .container {
 padding: 2rem;
 max-width: 800px;
@@ -35,4 +36,11 @@ transform: scale(1.02);
 .details {
 display: none;
 margin-top: 0.5rem;
+}
+.section {
+    margin-bottom: 2em;
+}
+.note {
+    font-style: italic;
+    color: #607996;
 }
